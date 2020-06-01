@@ -1,0 +1,185 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-01T19:56:19.130Z",
+        "line": 5,
+        "name": "validate google search is working",
+        "description": "",
+        "id": "feature-to-test-google-search-functionality;validate-google-search-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1961000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "browser is open",
+            "match": {
+              "location": "StepDefinitions.SampleGoogleSearchSteps.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2538000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on google search page",
+            "match": {
+              "location": "StepDefinitions.SampleGoogleSearchSteps.user_is_on_google_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 228000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters a text in searchbox",
+            "match": {
+              "location": "StepDefinitions.SampleGoogleSearchSteps.user_enters_a_text_in_searchbox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1977000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "hits Enter",
+            "match": {
+              "location": "StepDefinitions.SampleGoogleSearchSteps.hits_Enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 278000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is navigated to search result",
+            "match": {
+              "location": "StepDefinitions.SampleGoogleSearchSteps.user_is_navigated_to_search_result()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeFeature"
+          },
+          {
+            "name": "@smoketest"
+          }
+        ]
+      }
+    ],
+    "name": "feature to test google search functionality",
+    "description": "",
+    "id": "feature-to-test-google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/SampleGoogleSearch.feature",
+    "tags": [
+      {
+        "name": "@smokeFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-01T19:56:26.211Z",
+        "line": 5,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepDefinitions.SampleloginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username and password",
+            "match": {
+              "location": "StepDefinitions.SampleloginSteps.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on login button",
+            "match": {
+              "location": "StepDefinitions.SampleloginSteps.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "StepDefinitions.SampleloginSteps.user_is_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeFeature"
+          },
+          {
+            "name": "@smoketest"
+          }
+        ]
+      }
+    ],
+    "name": "feature to test login functionality",
+    "description": "",
+    "id": "feature-to-test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Samplelogin.feature",
+    "tags": [
+      {
+        "name": "@smokeFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
