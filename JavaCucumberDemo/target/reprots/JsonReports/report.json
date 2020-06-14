@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-14T07:21:03.404Z",
+        "start_timestamp": "2020-06-14T11:01:47.029Z",
         "line": 3,
         "name": "Check login is successful with valid credentials",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3972000000,
+              "duration": 1966000000,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 3581000000,
+              "duration": 3615000000,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 200000000,
+              "duration": 180000000,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 76000000,
+              "duration": 55000000,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 158000000,
+              "duration": 122000000,
               "status": "passed"
             },
             "line": 8,
@@ -82,10 +82,183 @@
     "tags": []
   },
   {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-14T11:01:53.080Z",
+        "line": 12,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1020000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "chrome browser is open",
+            "match": {
+              "location": "StepDefinitions.LoginDemowithExamplesSteps.chrome_browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2683000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on testproject login page",
+            "match": {
+              "location": "StepDefinitions.LoginDemowithExamplesSteps.user_is_on_testproject_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 179000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters the Raghav and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Raghav",
+                  "offset": 16
+                },
+                {
+                  "val": "12345",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.LoginDemowithExamplesSteps.user_enters_the_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login button in form",
+            "match": {
+              "location": "StepDefinitions.LoginDemowithExamplesSteps.user_clicks_on_login_button_in_form()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is navigated to the home page6",
+            "match": {
+              "location": "StepDefinitions.LoginDemowithExamplesSteps.user_is_navigated_to_the_home_page6()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-14T11:01:57.161Z",
+        "line": 13,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1101000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "chrome browser is open",
+            "match": {
+              "location": "StepDefinitions.LoginDemowithExamplesSteps.chrome_browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2964000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on testproject login page",
+            "match": {
+              "location": "StepDefinitions.LoginDemowithExamplesSteps.user_is_on_testproject_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters the ele and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ele",
+                  "offset": 16
+                },
+                {
+                  "val": "12345",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinitions.LoginDemowithExamplesSteps.user_enters_the_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login button in form",
+            "match": {
+              "location": "StepDefinitions.LoginDemowithExamplesSteps.user_clicks_on_login_button_in_form()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is navigated to the home page6",
+            "match": {
+              "location": "StepDefinitions.LoginDemowithExamplesSteps.user_is_navigated_to_the_home_page6()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test Login Functionality",
+    "description": "",
+    "id": "test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/LoginDemowithExamples.feature",
+    "tags": []
+  },
+  {
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-14T07:21:11.547Z",
+        "start_timestamp": "2020-06-14T11:02:01.576Z",
         "line": 5,
         "name": "validate google search is working",
         "description": "",
@@ -95,7 +268,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1976000000,
+              "duration": 1066000000,
               "status": "passed"
             },
             "line": 6,
@@ -107,7 +280,7 @@
           },
           {
             "result": {
-              "duration": 3854000000,
+              "duration": 3958000000,
               "status": "passed"
             },
             "line": 7,
@@ -119,7 +292,7 @@
           },
           {
             "result": {
-              "duration": 233000000,
+              "duration": 200000000,
               "status": "passed"
             },
             "line": 8,
@@ -131,7 +304,7 @@
           },
           {
             "result": {
-              "duration": 3107000000,
+              "duration": 3831000000,
               "status": "passed"
             },
             "line": 9,
@@ -143,7 +316,7 @@
           },
           {
             "result": {
-              "duration": 253000000,
+              "duration": 240000000,
               "status": "passed"
             },
             "line": 10,
@@ -184,7 +357,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-14T07:21:20.988Z",
+        "start_timestamp": "2020-06-14T11:02:10.881Z",
         "line": 5,
         "name": "Check login is successful with valid credentials",
         "description": "",
@@ -218,7 +391,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,
@@ -230,7 +402,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 9,

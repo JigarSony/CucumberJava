@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="17.785">
-<testcase classname="Test Login Functionality" name="Check login is successful with valid credentials" time="8.131">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="23.999">
+<testcase classname="Test Login Functionality" name="Check login is successful with valid credentials" time="6.039">
 <system-out><![CDATA[Given browser is open1......................................................passed
 And user is on login page2..................................................passed
 When user enters username and password3.....................................passed
@@ -8,7 +8,23 @@ And user clicks on login button4............................................pass
 Then user is navigated to the home page5....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="feature to test google search functionality" name="validate google search is working" time="9.438">
+<testcase classname="Test Login Functionality" name="Check login is successful with valid credentials" time="4.078">
+<system-out><![CDATA[Given chrome browser is open................................................passed
+And user is on testproject login page.......................................passed
+When user enters the Raghav and 12345.......................................passed
+And user clicks on login button in form.....................................passed
+Then user is navigated to the home page6....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Login Functionality" name="Check login is successful with valid credentials 2" time="4.412">
+<system-out><![CDATA[Given chrome browser is open................................................passed
+And user is on testproject login page.......................................passed
+When user enters the ele and 12345..........................................passed
+And user clicks on login button in form.....................................passed
+Then user is navigated to the home page6....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test google search functionality" name="validate google search is working" time="9.301">
 <system-out><![CDATA[Given browser is open.......................................................passed
 And user is on google search page...........................................passed
 When user enters a text in searchbox........................................passed
@@ -16,7 +32,7 @@ And hits Enter..............................................................pass
 Then user is navigated to search result.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="feature to test login functionality" name="Check login is successful with valid credentials" time="0.013">
+<testcase classname="feature to test login functionality" name="Check login is successful with valid credentials" time="0.008">
 <system-out><![CDATA[Given user is on login page.................................................passed
 When user enters username and password......................................passed
 And clicks on login button..................................................passed

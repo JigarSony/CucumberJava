@@ -1,23 +1,19 @@
 package StepDefinitions;
 
-import java.util.concurrent.TimeUnit;
-
+import io.cucumber.java.en.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import java.util.concurrent.TimeUnit;
 
-public class LoginDemoSteps {
+public class LoginDemowithExamplesSteps {
 
     WebDriver driver = null;
 
-    @Given("browser is open1")
-    public void browser_is_open1() {
+    @Given("chrome browser is open")
+    public void chrome_browser_is_open() {
         System.out.println("In - browser is open");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -26,28 +22,28 @@ public class LoginDemoSteps {
         driver.manage().window().maximize();
     }
 
-    @And("user is on login page2")
-    public void user_is_on_login_page2() {
+    @And("user is on testproject login page")
+    public void user_is_on_testproject_login_page() {
         driver.navigate().to("https://example.testproject.io/web/");
     }
 
-    @When("user enters username and password3")
-    public void user_enters_username_and_password3() {
-
-        driver.findElement(By.id("name")).sendKeys("Raghav");
-        driver.findElement(By.id("password")).sendKeys("12345");
+    @When("^user enters the (.*) and (.*)$")
+    public void user_enters_the_username_and_password(String username, String password) {
+        driver.findElement(By.id("name")).sendKeys(username);
+        driver.findElement(By.id("password")).sendKeys(password);
     }
 
-    @And("user clicks on login button4")
-    public void user_clicks_on_login_button4() {
+    @And("user clicks on login button in form")
+    public void user_clicks_on_login_button_in_form() {
         driver.findElement(By.id("login")).click();
     }
 
-    @Then("user is navigated to the home page5")
-    public void user_is_navigated_to_the_home_page4() {
+    @Then("user is navigated to the home page6")
+    public void user_is_navigated_to_the_home_page6() {
         //driver.findElement(By.id("greetings")).getText().contains("Jigar");
         driver.findElement(By.id("logout")).isDisplayed();
         //driver.quit();
         driver.close();
     }
+
 }
