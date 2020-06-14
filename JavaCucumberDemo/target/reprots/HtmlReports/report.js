@@ -1,4 +1,65 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/SampleGoogleSearch.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/LoginDemo.feature");
+formatter.feature({
+  "name": "Test Login Functionality",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Check login is successful with valid credentials",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "browser is open1",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemoSteps.browser_is_open1()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on login page2",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemoSteps.user_is_on_login_page2()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters username and password3",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemoSteps.user_enters_username_and_password3()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on login button4",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemoSteps.user_clicks_on_login_button4()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is navigated to the home page5",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemoSteps.user_is_navigated_to_the_home_page4()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/Features/SampleGoogleSearch.feature");
 formatter.feature({
   "name": "feature to test google search functionality",
   "description": "",
