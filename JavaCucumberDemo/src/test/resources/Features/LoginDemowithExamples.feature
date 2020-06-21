@@ -1,4 +1,4 @@
-Feature: Test Login Functionality with Examples and POM
+Feature: Test Login Functionality with Examples
 
   Scenario Outline: Check login is successful with valid credentials
     Given chrome browser is open
