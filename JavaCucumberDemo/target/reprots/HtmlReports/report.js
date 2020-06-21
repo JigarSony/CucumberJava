@@ -61,7 +61,7 @@ formatter.result({
 });
 formatter.uri("file:src/test/resources/Features/LoginDemowithExamples.feature");
 formatter.feature({
-  "name": "Test Login Functionality",
+  "name": "Test Login Functionality with Examples and POM",
   "description": "",
   "keyword": "Feature"
 });
@@ -221,6 +221,172 @@ formatter.step({
 });
 formatter.match({
   "location": "StepDefinitions.LoginDemowithExamplesSteps.user_is_navigated_to_the_home_page6()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/Features/LoginDemowithExamplesPOM.feature");
+formatter.feature({
+  "name": "Test Login Functionality",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "name": "Check login is successful with valid credentials",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "chrome browser is opens",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "user is on testproject login pages",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user enters the \u003cusername\u003e ands \u003cpassword\u003e",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "user clicks on login button in forms",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user is navigated to the homes page6",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ]
+    },
+    {
+      "cells": [
+        "Raghav",
+        "12345"
+      ]
+    },
+    {
+      "cells": [
+        "ele",
+        "12345"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Check login is successful with valid credentials",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "chrome browser is opens",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemowithExamplesSteps_POM.chrome_browser_is_open()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on testproject login pages",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemowithExamplesSteps_POM.user_is_on_testproject_login_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters the Raghav ands 12345",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemowithExamplesSteps_POM.user_enters_the_username_and_password(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on login button in forms",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemowithExamplesSteps_POM.user_clicks_on_login_button_in_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is navigated to the homes page6",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemowithExamplesSteps_POM.user_is_navigated_to_the_home_page6()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Check login is successful with valid credentials",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "chrome browser is opens",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemowithExamplesSteps_POM.chrome_browser_is_open()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on testproject login pages",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemowithExamplesSteps_POM.user_is_on_testproject_login_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters the ele ands 12345",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemowithExamplesSteps_POM.user_enters_the_username_and_password(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on login button in forms",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemowithExamplesSteps_POM.user_clicks_on_login_button_in_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is navigated to the homes page6",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.LoginDemowithExamplesSteps_POM.user_is_navigated_to_the_home_page6()"
 });
 formatter.result({
   "status": "passed"
